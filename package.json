@@ -1,35 +1,41 @@
 {
-  "name": "particles.",
+  "homepage": "https://davidmcosta.github.io/MagicBrain",
+  "name": "facerecapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@tsparticles/engine": "^3.4.0",
-    "@tsparticles/react": "^3.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "tslib": "^2.6.3",
-    "tsparticles": "^3.4.0"
+    "clarifai": "^2.9.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-particles-js": "^2.4.2",
+    "react-scripts": "^5.0.1",
+    "react-tilt": "^0.1.4",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "description": "\"starwars-spaceships\"",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero-to-mastery/face-rec-app.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "ZTM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zero-to-mastery/face-rec-app/issues"
+  },
+  "homepage": "./",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
